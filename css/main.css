@@ -6,58 +6,37 @@ p {
   cursor: pointer; }
 
 header {
+  color: black;
   position: relative;
   width: 100%;
   background-color: transparent; }
-  header .container {
-    width: 100%;
-    padding: 0;
-    margin: 0; }
-    header .container .hat {
-      height: auto;
-      box-shadow: 0 0 20px black;
-      position: fixed;
-      z-index: 100;
-      background-color: rgba(255, 255, 255, 0.7); }
-      header .container .hat .logo img {
-        height: 38px;
-        margin: 10px 0; }
-      header .container .hat .menu ul {
-        margin: 0;
-        padding: 0;
-        text-align: right; }
-        header .container .hat .menu ul li {
-          margin: 5px 5px;
-          display: inline-block;
-          padding: 14px 20px; }
-          header .container .hat .menu ul li:hover {
-            border-radius: 6%;
-            border: 1px solid white;
-            padding: 13px 19px;
-            background: -moz-linear-gradient(top, #2a2a2a, #c0bbbb);
-            background: -webkit-linear-gradient(top, #2a2a2a, #c0bbbb);
-            background: -o-linear-gradient(top, #2a2a2a, #c0bbbb);
-            background: -ms-linear-gradient(top, #2a2a2a, #c0bbbb);
-            background: linear-gradient(top, #2a2a2a, #c0bbbb);
-            cursor: pointer; }
-            header .container .hat .menu ul li:hover a {
-              color: white;
-              text-shadow: 0 4px 15px white; }
-          header .container .hat .menu ul li a {
-            text-shadow: 0 4px 15px black;
-            font-weight: bold;
-            color: black;
-            text-decoration: none; }
-      header .container .hat .langs {
-        position: relative; }
-        header .container .hat .langs .dropdown {
-          position: relative; }
-          header .container .hat .langs .dropdown button {
-            padding: 6px 6px;
-            margin: 12px 0 0 0;
-            outline: none; }
-            header .container .hat .langs .dropdown button span {
-              margin: 0 3px; }
+  header .navbar {
+    min-width: 58px;
+    margin-bottom: 0; }
+  header .navbar-default {
+    border-radius: 0px;
+    border: none; }
+    header .navbar-default .container-fluid .navbar-header {
+      height: 58px; }
+      header .navbar-default .container-fluid .navbar-header button {
+        color: black; }
+        header .navbar-default .container-fluid .navbar-header button span {
+          color: black; }
+      header .navbar-default .container-fluid .navbar-header a {
+        padding: 6px 0; }
+        header .navbar-default .container-fluid .navbar-header a img {
+          height: 46px; }
+    header .navbar-default .container-fluid .navbar-collapse ul li a {
+      color: black;
+      padding: 19px 15px; }
+      header .navbar-default .container-fluid .navbar-collapse ul li a:hover {
+        background-color: #c7c7c7; }
+      header .navbar-default .container-fluid .navbar-collapse ul li a:focus {
+        background-color: #c7c7c7; }
+      header .navbar-default .container-fluid .navbar-collapse ul li a span {
+        margin: 0 2px; }
+    header .navbar-default .container-fluid .navbar-collapse ul li ul li a {
+      padding: 10px 10px; }
   header .photo {
     z-index: 1;
     position: relative;
@@ -66,6 +45,56 @@ header {
     header .photo img {
       width: 100%; }
 
+/*	.container
+ * width: 100%
+ * padding: 0
+ * margin: 0
+ * .hat
+ * 	height: auto
+ * 	box-shadow: 0 0 20px black
+ * 	position: fixed
+ * 	z-index: 100
+ * 	background-color: rgba(255,255,255,0.7)
+ * 	.logo
+ * 		img
+ * 			height: 38px
+ * 			margin: 10px 0
+ * 	.menu
+ * 		ul
+ * 			margin: 0
+ * 			padding: 0
+ * 			text-align: right
+ * 			li
+ * 				margin: 5px 5px
+ * 				display: inline-block
+ * 				&:hover
+ * 					border-radius: 6%
+ * 					border: 1px solid white
+ * 					background: -moz-linear-gradient(top, #2a2a2a, #c0bbbb)
+ * 					background: -webkit-linear-gradient(top, #2a2a2a, #c0bbbb)
+ * 					background: -o-linear-gradient(top, #2a2a2a, #c0bbbb)
+ * 					background: -ms-linear-gradient(top, #2a2a2a, #c0bbbb)
+ * 					background: linear-gradient(top, #2a2a2a, #c0bbbb)
+ * 					cursor: pointer
+ * 					a
+ * 						color: white
+ * 						text-shadow: 0 4px 15px white
+ * 				a
+ * 					padding: 14px 20px
+ * 					text-shadow: 0 4px 15px black
+ * 					font-weight: bold
+ * 					color: black
+ * 					text-decoration: none
+ * 	.langs
+ * 		position: relative
+ * 		.dropdown
+ * 			position: relative
+ * 			button
+ * 				padding: 6px 6px
+ * 				margin: 12px 0 0 0
+ * 				outline: none
+ * 				span
+ * 					margin: 0 3px */
 .about {
   margin-top: -58px;
   position: relative;
