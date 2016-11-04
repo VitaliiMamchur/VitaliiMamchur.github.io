@@ -149,7 +149,15 @@ header {
     text-align: center;
     margin: 20px 0; }
     .contact .container-fluid .oci div {
-      margin: 57.5px 0; }
+      border: 1px solid black;
+      box-shadow: 0 0 15px white;
+      background-color: black;
+      margin: 26.5px 0;
+      padding: 30px;
+      background-color: rgba(0, 0, 0, 0.5); }
+      .contact .container-fluid .oci div:hover {
+        box-shadow: 0 0 5px white;
+        background-color: rgba(0, 0, 0, 0.8); }
       .contact .container-fluid .oci div h4 {
         margin: 0; }
   .contact .container-fluid .oform {
@@ -234,7 +242,7 @@ footer {
   color: white;
   position: fixed;
   bottom: 29px;
-  right: 50px;
+  right: 3.5%;
   padding: 15px 18px;
   z-index: 100;
   border-radius: 50%;
