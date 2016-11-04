@@ -67,6 +67,7 @@ header {
       width: 100%; }
 
 .about {
+  margin-top: -58px;
   position: relative;
   /*hr
    * margin-top: 5px
@@ -79,7 +80,7 @@ header {
     margin: 0; }
     .about .container .h {
       text-align: center;
-      margin: 10px 0; }
+      margin: 68px 0 10px 0; }
     .about .container .members .general {
       margin: 5px 0 25px 0; }
       .about .container .members .general .vitalii:hover {
@@ -112,37 +113,62 @@ header {
 .contact {
   position: relative;
   width: 100%;
-  background-color: grey; }
-  .contact .container {
-    width: 100%;
-    padding: 0;
-    margin: 0; }
-    .contact .container .form {
-      position: relative; }
-      .contact .container .form .text {
-        text-align: center; }
-        .contact .container .form .text h4 {
-          margin-top: 20px; }
-      .contact .container .form form input {
+  background-image: url("../img/office.jpg"); }
+  .contact .container-fluid .oci {
+    color: white;
+    text-shadow: 0 0 10px black;
+    text-align: center;
+    margin: 20px 0; }
+    .contact .container-fluid .oci div {
+      margin: 57.5px 0; }
+      .contact .container-fluid .oci div h4 {
+        margin: 0; }
+  .contact .container-fluid .oform {
+    margin-bottom: 15px; }
+    .contact .container-fluid .oform .text h4 {
+      color: black;
+      text-align: center;
+      margin: 20px 0 15px 0; }
+    .contact .container-fluid .oform .form {
+      font-size: 14px; }
+      .contact .container-fluid .oform .form form input {
+        color: white;
+        background-color: rgba(0, 0, 0, 0.5);
+        line-height: 36px;
+        padding: 0 15px;
+        margin: 5px;
+        box-shadow: 0 0 15px white;
         outline: none;
-        border: 1px solid black;
-        line-height: 28px;
-        margin: 10px 0;
-        border-radius: 5px; }
-      .contact .container .form form textarea {
+        border: 1px solid black; }
+        .contact .container-fluid .oform .form form input:focus {
+          background-color: rgba(0, 0, 0, 0.8);
+          box-shadow: 0 0 5px white; }
+      .contact .container-fluid .oform .form form textarea {
+        color: rgba(255, 255, 255, 0.6);
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 11px 15px;
+        margin: 5px;
+        box-shadow: 0 0 15px white;
         resize: none;
         outline: none;
-        border: 1px solid black;
-        line-height: 24px;
-        border-radius: 5px; }
-      .contact .container .form form .youremail {
-        width: 48%; }
-      .contact .container .form form .yoursubj {
-        width: 48%;
-        left: 4%; }
-      .contact .container .form form .sub:hover {
-        background-color: orange;
-        color: white; }
+        border: 1px solid black; }
+        .contact .container-fluid .oform .form form textarea:focus {
+          background-color: rgba(0, 0, 0, 0.8);
+          box-shadow: 0 0 5px white; }
+      .contact .container-fluid .oform .form form .email {
+        width: 100%; }
+      .contact .container-fluid .oform .form form .subject {
+        width: 100%; }
+      .contact .container-fluid .oform .form form .message {
+        width: 100%; }
+      .contact .container-fluid .oform .form form .sub {
+        width: 33%;
+        box-shadow: 0 0 15px white; }
+        .contact .container-fluid .oform .form form .sub:active {
+          box-shadow: 0 0 5px white; }
+        .contact .container-fluid .oform .form form .sub:hover {
+          background-color: orange;
+          color: white; }
 
 footer {
   position: relative;
@@ -172,5 +198,24 @@ footer {
             color: #f0ab17; }
             footer .container .consist .designers p a:hover {
               text-shadow: 0 0 5px black; }
+
+.scrollup button {
+  display: none;
+  outline: none;
+  color: white;
+  position: fixed;
+  bottom: 29px;
+  right: 50px;
+  padding: 15px 18px;
+  z-index: 100;
+  border-radius: 50%;
+  border: 2px solid white;
+  box-shadow: 0 0 10px black;
+  background: rgba(0, 0, 0, 0.5); }
+  .scrollup button:hover {
+    background-color: rgba(255, 255, 255, 0.6);
+    color: black;
+    border: 2px solid black;
+    box-shadow: 0 0 10px white; }
 
 /*# sourceMappingURL=main.css.map */

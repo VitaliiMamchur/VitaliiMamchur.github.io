@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Landing Page</title>
     <link rel="shortcut icon" href="img/favicon.png" />
 	<link rel="stylesheet" type="text/css" href="libs/bootstrap/css/bootstrap.min.css"> 
@@ -21,8 +22,8 @@
                 <div class="col-lg-6 col-md-7 col-sm-9 col-xs-10 menu">
                     <ul>
                         <li><a href="#index.html">Главная</a></li>
-                        <li><a href="#">Портфолио</a></li>
                         <li><a href="#about">Кто мы?</a></li>
+                        <li><a href="#">Портфолио</a></li>
                         <li><a href="#contact">Контакты</a></li>
                     </ul>
                 </div>
@@ -89,6 +90,45 @@
 
     <div class="contact" id="contact">
 
+        <div class="container-fluid">
+
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 oci">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                    <h4>E-mail:</h4>
+                    <a href="mailto:"><h5>testing@gmail.com</h5></a>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                    <h4>Номер тел.:</h4>
+                    <h5>+38(063)-847-14-28</h5>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                    <h4>Страница в VK:</h4>
+                    <a href="https://vk.com/testing_page" target="_blank"><h5>Жми сюда</h5></a>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                    <h4>Skype:</h4>
+                    <h5>vitalikmamchur</h5>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 oform">
+                <div class="col-lg-7 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-9 col-sm-offset-2 col-xs-10 col-xs-offset-1 text">
+                    <h4>Есть вопросы - напишите нам!</h4>  
+                </div>
+                <div class="col-lg-7 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-9 col-sm-offset-2 col-xs-10 col-xs-offset-1 form">
+                    <form name="contact">
+                        <input class="email" type="email" name="mail" placeholder="Ваш e-mail" required>
+                        <input class="subject"  type="text" name="subject" placeholder="Тема">
+                        <textarea class="message" rows="5" name="text" placeholder="Ваше сообщение" required></textarea>
+                        <input class="sub" type="submit" value="Отправить">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--<div class="contact" >
+
         <div class="container">
 
             <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1 form">
@@ -105,7 +145,7 @@
 
         </div>
 
-    </div>
+    </div>-->
 	
     <footer>
 
@@ -124,8 +164,10 @@
         </div>
 
     </footer>
+    <div class="scrollup"><button><span class="glyphicon glyphicon-menu-up"></span></button></div>
 
     <script type="text/javascript" src="libs/jquery/jquery-2.2.1.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="libs/bootstrap/js/bootstrap.js"></script>
 </body>
 </html>

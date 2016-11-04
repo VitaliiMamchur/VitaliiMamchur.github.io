@@ -68,6 +68,7 @@ header
 		img
 			width: 100%
 .about
+	margin-top: -58px
 	position: relative
 	.container
 		width: 100%
@@ -75,7 +76,7 @@ header
 		margin: 0
 		.h
 			text-align: center
-			margin: 10px 0
+			margin: 68px 0 10px 0
 		.members
 			.general
 				margin: 5px 0 25px 0
@@ -118,39 +119,66 @@ header
 .contact
 	position: relative
 	width: 100%
-	background-color: grey
-	.container
-		width: 100%
-		padding: 0
-		margin: 0
-		.form
-			position: relative
-			.text
-				text-align: center
+	background-image: url("../img/office.jpg")
+	.container-fluid
+		.oci
+			color: white
+			text-shadow: 0 0 10px black
+			text-align: center
+			margin: 20px 0
+			div
+				margin: 57.5px 0
 				h4
-					margin-top: 20px
-			form
-				input
-					outline: none
-					border: 1px solid black
-					line-height: 28px
-					margin: 10px 0
-					border-radius: 5px
-				textarea
-					resize: none
-					outline: none
-					border: 1px solid black
-					line-height: 24px
-					border-radius: 5px
-				.youremail
-					width: 48%
-				.yoursubj
-					width: 48%
-					left: 4%
-				.sub
-					&:hover
-						background-color: orange
+					margin: 0
+		.oform
+			margin-bottom: 15px
+			.text
+				h4
+					color: black
+					text-align: center
+					margin: 20px 0 15px 0
+			.form
+				font-size: 14px
+				form
+					input
 						color: white
+						background-color: rgba(0,0,0,.5)
+						line-height: 36px
+						padding: 0 15px
+						margin: 5px
+						box-shadow: 0 0 15px white
+						outline: none
+						border: 1px solid black
+						&:focus
+							background-color: rgba(0,0,0,.8)
+							box-shadow: 0 0 5px white
+
+					textarea
+						color: rgba(255,255,255,0.6)
+						background-color: rgba(0,0,0,.5)
+						padding: 11px 15px
+						margin: 5px
+						box-shadow: 0 0 15px white
+						resize: none
+						outline: none
+						border: 1px solid black
+						&:focus
+							background-color: rgba(0,0,0,.8)
+							box-shadow: 0 0 5px white
+					.email
+						width: 100%
+					.subject
+						width: 100%
+					.message
+						width: 100%
+					.sub
+						width: 33%
+						box-shadow: 0 0 15px white
+						&:active
+							box-shadow: 0 0 5px white
+						&:hover
+							background-color: orange
+							color: white
 footer
 	position: relative
 	width: 100%
@@ -182,8 +210,25 @@ footer
 						color: #f0ab17
 						&:hover
 							text-shadow: 0 0 5px black
-
-
+.scrollup
+	button
+		display: none
+		outline: none
+		color: white
+		position: fixed
+		bottom: 29px
+		right: 50px
+		padding: 15px 18px
+		z-index: 100
+		border-radius: 50%
+		border: 2px solid white
+		box-shadow: 0 0 10px black
+		background: rgba(0,0,0,.5)
+		&:hover
+			background-color: rgba(255,255,255,.6)
+			color: black
+			border: 2px solid black
+			box-shadow: 0 0 10px white
 
 
 
